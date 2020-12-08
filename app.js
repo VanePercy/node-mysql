@@ -83,7 +83,7 @@ app.get('/customers/:id', (req, res) => {
       res.send('Customer updated!');
     });
   });
-  
+
 
 app.delete('/delete/:id', (req, res) => {
   const { id } = req.params;
@@ -91,7 +91,7 @@ app.delete('/delete/:id', (req, res) => {
 
   connection.query(sql, error => {
     if (error) throw error;
-    res.send('Delete customer');
+    res.send('Delete customer ok');
   });
 });
 
